@@ -13,7 +13,7 @@ import os
 # Feel free to make this any number
 number = 1
 # Warning
-print("THIS WILL RENAME ALL FILES IN THE WALLPAPERS DIRECTORY! THIS CANNOT BE UNDONE!")
+print("THIS WILL RENAME ALL FILES IN THE FOLDER/ DIRECTORY! THIS CANNOT BE UNDONE!")
 # Verifies that the user wants to continue, can really destroy a folder if used accidentally.
 if input("Are you SURE you want to continue? y/n").lower() == "yes" or "y":
     # Takes a list of all files and folders inside of a given location, then takes each item in the list as a filename.
@@ -25,7 +25,7 @@ if input("Are you SURE you want to continue? y/n").lower() == "yes" or "y":
         number += 1
         # I had rename thousands of files so I printed out a sort of loading bar using percentages.
         if number % 10 == 0:
-            print("We are {}% done".format((number / len(os.listdir("Wallpapers/"))) * 100))
+            print("We are {}% done".format((number / len(os.listdir("FOLDER/"))) * 100))
 
 
 print("Done")
